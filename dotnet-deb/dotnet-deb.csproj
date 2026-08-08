@@ -13,6 +13,10 @@ See https://github.com/qmfrederik/dotnet-packaging/ for more information on how 
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Packaging.Targets" Version="1.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="System.CommandLine" Version="3.0.0-preview.6.26359.118" />
     <PackageReference Include="Microsoft.Build" Version="18.8.2" ExcludeAssets="runtime" />
     <PackageReference Include="Microsoft.Build.Locator" Version="1.11.2" />
